@@ -1,0 +1,11 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    color: rgb(224, 224, 224);
+    background-color: hsl(252, 67%, 43%);
+}

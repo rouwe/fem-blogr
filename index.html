@@ -15,82 +15,291 @@
   </style>
 </head>
 <body>
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
+  <!-- Header -->
+  <header class="header">
+    <!-- Logo -->
+    <div class="header-logo">
+      <svg width="101" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M0 30.803V1.486h10.653c1.982 0 3.695.31 5.14.93 1.446.619 2.56 1.5 3.345 2.642.785 1.142 1.177 2.484 1.177 4.026 0 1.404-.303 2.636-.909 3.695a6.48 6.48 0 01-2.56 2.498c1.487.578 2.643 1.494 3.469 2.746.826 1.253 1.239 2.732 1.239 4.439 0 1.707-.44 3.18-1.322 4.418-.88 1.239-2.12 2.202-3.716 2.89-1.596.688-3.482 1.033-5.657 1.033H0zM5.946 6.565v6.73h4.046c1.35 0 2.388-.282 3.118-.846.73-.564 1.094-1.397 1.094-2.498 0-1.101-.365-1.94-1.094-2.519-.73-.578-1.769-.867-3.118-.867H5.946zm0 19.159h4.624c1.542 0 2.732-.33 3.572-.991.84-.66 1.26-1.61 1.26-2.85 0-1.238-.42-2.188-1.26-2.848-.84-.66-2.03-.991-3.572-.991H5.946v7.68zm19.282 5.079V0h5.781v30.803h-5.78zm20.893.619c-1.624 0-3.124-.29-4.5-.867a10.94 10.94 0 01-3.593-2.416 10.96 10.96 0 01-2.374-3.654c-.564-1.404-.846-2.931-.846-4.583 0-1.652.289-3.173.867-4.563a11.354 11.354 0 012.415-3.654 10.96 10.96 0 013.634-2.436c1.39-.578 2.91-.867 4.562-.867 1.625 0 3.125.289 4.501.867a10.94 10.94 0 013.592 2.416 11.01 11.01 0 012.375 3.633c.564 1.39.846 2.911.846 4.563 0 1.651-.289 3.179-.867 4.583a11.297 11.297 0 01-2.416 3.675 10.96 10.96 0 01-3.633 2.436c-1.39.578-2.911.867-4.563.867zm.083-5.203c1.046 0 1.982-.275 2.808-.825.825-.551 1.48-1.301 1.96-2.25.483-.95.723-2.03.723-3.242 0-1.211-.24-2.292-.722-3.241-.482-.95-1.136-1.7-1.961-2.25-.826-.551-1.762-.826-2.808-.826-1.046 0-1.982.275-2.808.825-.826.55-1.48 1.301-1.961 2.25-.482.95-.723 2.03-.723 3.242 0 1.211.241 2.292.723 3.241.482.95 1.135 1.7 1.961 2.25.826.551 1.762.826 2.808.826zm24.155 3.964a9.13 9.13 0 01-3.86-.826 9.492 9.492 0 01-3.118-2.291c-.881-.977-1.57-2.12-2.065-3.427-.495-1.308-.743-2.719-.743-4.233 0-1.569.255-3.02.764-4.356a10.614 10.614 0 012.147-3.489 10.174 10.174 0 013.22-2.333c1.225-.564 2.554-.846 3.985-.846 1.404 0 2.67.282 3.799.846a7.402 7.402 0 012.807 2.457l.124-2.684h5.327v19.2c0 1.68-.269 3.207-.805 4.584-.537 1.376-1.301 2.56-2.292 3.55a10.231 10.231 0 01-3.53 2.292c-1.363.537-2.87.805-4.522.805-1.624 0-3.083-.254-4.376-.764a10.468 10.468 0 01-3.386-2.126 10.035 10.035 0 01-2.271-3.18L67.097 32a5.452 5.452 0 001.92 1.879c.784.454 1.672.681 2.663.681 1.074 0 2.003-.24 2.787-.723.785-.481 1.397-1.156 1.838-2.023.44-.867.66-1.879.66-3.035v-1.775a7.793 7.793 0 01-2.828 2.333c-1.143.564-2.402.846-3.778.846zm1.404-5.12c1.018 0 1.92-.254 2.704-.764a5.556 5.556 0 001.879-2.064c.468-.867.702-1.851.702-2.952 0-1.102-.234-2.086-.702-2.953a5.556 5.556 0 00-1.879-2.064c-.784-.51-1.686-.764-2.704-.764-1.019 0-1.92.255-2.705.764a5.556 5.556 0 00-1.879 2.064c-.468.867-.702 1.851-.702 2.953 0 1.1.234 2.085.702 2.952a5.556 5.556 0 001.88 2.064c.784.51 1.685.764 2.704.764zm15.607 5.74V9h5.327l.206 3.304c.55-1.157 1.294-2.044 2.23-2.664.936-.62 2.037-.929 3.303-.929.386 0 .77.035 1.156.103.386.07.73.159 1.033.269l-.62 5.698a4.361 4.361 0 00-.929-.227 7.495 7.495 0 00-.97-.062c-1.597 0-2.822.489-3.675 1.466-.853.977-1.28 2.36-1.28 4.15v10.694h-5.78z" fill="#FFF" fill-rule="nonzero"/></svg>
+    </div>
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <!-- Navigation -->
+      <nav class="header-nav">
+        <ul class="nav-wrapper">
+          <!-- Product -->
+          <li class="nav-item-wrapper">
+            <div class="nav-item">
+              <button class="nav-item-button">Product
+                <span>
+                  <!-- Arrow Light -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                  <!-- Arrow Dark -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                </span>
+              </button>
+            </div>
+            <!-- Navigation Item Links -->
+            <ul class="sub-nav-wrapper">
+              <li>
+                <a href="#" target="_blank">Overview</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Pricing</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Marketplace</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Features</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Integrations</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Company -->
+          <li class="nav-item-wrapper">
+            <div class="nav-item">
+              <button class="nav-item-button">Company
+                <span>
+                  <!-- Arrow Light -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                  <!-- Arrow Dark -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                </span>
+              </button>
+            </div>
+            <!-- Navigation Item Links -->
+            <ul class="sub-nav-wrapper">
+              <li>
+                <a href="#" target="_blank">About</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Team</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Blog</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Careers</a>
+              </li>
+            </ul>            
+          </li>
+          <!-- Connect -->
+          <li class="nav-item-wrapper">
+            <div class="nav-item">
+              <button class="nav-item-button">Connect
+                <span>
+                  <!-- Arrow Light -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                  <!-- Arrow Dark -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                </span>
+              </button>
+            </div>
+            <!-- Navigation Item Links -->
+            <ul class="sub-nav-wrapper">
+              <li>
+                <a href="#" target="_blank">Contact</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Newsletter</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">LinkedIn</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- CTA -->
+      <div class="header-cta">
+        <div class="cta cta-login">
+          <a href="#login" target="_blank">Log In</a>
+        </div>
+        <div class="cta cta-sign-up">
+          <a href="#login" target="_blank">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu Toggler -->
+    <div class="header-menu-toggler">
+      <!-- Open Menu -->
+      <div class="toggler menu-open">
+        <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+      </div>
+      <!-- Close Menu -->
+      <div class="toggler menu-close">
+        <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z" fill="#FFF" fill-rule="evenodd"/></svg>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero -->
+    <section class="section hero-container">
+      <div class="hero-wrapper">
+        <!-- Hero Header -->
+        <header class="hero-header">
+          <h1 class="hero-heading">A modern publishing platform</h1>
+          <p class="hero-sub-heading">Grow your audience and build your online brand</p>
+        </header>
+        <!-- Hero CTA -->
+        <div class="hero-cta">
+          <div class="cta cta-start">
+            <a href="#start">Start for Free</a>
+          </div>
+          <div class="cta cta-learn">
+            <a href="#learn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <div class="section features-container">
+      <!-- Design Feature -->
+      <section class="feature-section feature-design">
+        <!-- Design Feature Heading -->
+        <h2 class="f-heading f-d-heading">Designed for the future</h2>
+        <!-- Design Main -->
+        <div class="f-d-main">
+          <!-- Design Image -->
+          <div class="f-d-img-wrapper">
+            <!-- Mobile Editor -->
+            <div class="f-d-img-mobile">
+              <svg width="406" height="331" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="27.846%" x2="100%" y2="72.154%" id="editor-m-c"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><linearGradient x1="0%" y1="41.623%" x2="100%" y2="58.377%" id="editor-m-e"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><filter x="-21.5%" y="-23%" width="142.9%" height="164.5%" filterUnits="objectBoundingBox" id="editor-m-b"><feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0" in="shadowBlurOuter1"/></filter><rect id="editor-m-a" x="0" y="0" width="326" height="217" rx="5"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(40)"><rect fill="#2D2E40" opacity=".08" transform="matrix(1 0 0 -1 0 329)" x="52" y="53" width="223" height="223" rx="111.5"/><rect stroke="#2D2E40" opacity=".5" transform="matrix(1 0 0 -1 0 326)" x="37.5" y="37.5" width="251" height="251" rx="125.5"/><rect stroke="#2D2E40" opacity=".25" transform="matrix(1 0 0 -1 0 326)" x=".5" y=".5" width="325" height="325" rx="162.5"/></g><g transform="translate(40 54)"><mask id="editor-m-d" fill="#fff"><use xlink:href="#editor-m-a"/></mask><g fill-rule="nonzero"><use fill="#000" filter="url(#editor-m-b)" xlink:href="#editor-m-a"/><use fill="url(#editor-m-c)" xlink:href="#editor-m-a"/></g><path d="M3 63.525h320a3 3 0 013 3V214a3 3 0 01-3 3H3a3 3 0 01-3-3V66.525a3 3 0 013-3z" fill="#2D2E40" fill-rule="nonzero" mask="url(#editor-m-d)"/><rect fill="#FFF" fill-rule="nonzero" mask="url(#editor-m-d)" x="45.967" y="24.246" width="68.95" height="69.707" rx="3"/><ellipse fill="#2D2E40" mask="url(#editor-m-d)" cx="80.442" cy="59.402" rx="19.959" ry="20.003"/><rect fill="#FFF" fill-rule="nonzero" mask="url(#editor-m-d)" x="126.408" y="24.246" width="153.625" height="165.478" rx="3"/></g><path d="M106 144c23.871-37.394 41.526-57.6 52.964-60.62 17.158-4.53 12.04 42.374 36.744 36.938 24.705-5.436 27.717-52.994 46.403-55.234 18.685-2.241 28.57 41.257 36.733 45.264 5.441 2.672 12.16-3.105 20.156-17.332" stroke="url(#editor-m-e)" stroke-width="8" stroke-linecap="round" transform="translate(40 54)"/></g></svg>
+            </div>
+            <!-- Desktop Editor -->
+            <div class="f-d-img-desktop">
+              <svg width="925" height="882" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="27.881%" x2="100%" y2="72.119%" id="editor-d-c"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><linearGradient x1="0%" y1="41.725%" x2="100%" y2="58.275%" id="editor-d-e"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><filter x="-10.9%" y="-11.7%" width="121.8%" height="132.8%" filterUnits="objectBoundingBox" id="editor-d-b"><feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0" in="shadowBlurOuter1"/></filter><rect id="editor-d-a" x="0" y="0" width="642" height="427" rx="15"/></defs><g transform="translate(40)" fill="none" fill-rule="evenodd"><rect fill="#2D2E40" opacity=".08" transform="matrix(1 0 0 -1 0 890)" x="145" y="144" width="600" height="602" rx="300"/><rect stroke="#2D2E40" opacity=".5" transform="matrix(1 0 0 -1 0 882)" x="105.5" y="100.5" width="679" height="681" rx="339.5"/><rect stroke="#2D2E40" opacity=".25" transform="matrix(1 0 0 -1 0 882)" x="5.5" y=".5" width="879" height="881" rx="439.5"/><g transform="translate(0 242)"><mask id="editor-d-d" fill="#fff"><use xlink:href="#editor-d-a"/></mask><g fill-rule="nonzero"><use fill="#000" filter="url(#editor-d-b)" xlink:href="#editor-d-a"/><use fill="url(#editor-d-c)" xlink:href="#editor-d-a"/></g><path d="M3 125h636a3 3 0 013 3v296a3 3 0 01-3 3H3a3 3 0 01-3-3V128a3 3 0 013-3z" fill="#2D2E40" fill-rule="nonzero" mask="url(#editor-d-d)"/><rect fill="#FFF" fill-rule="nonzero" mask="url(#editor-d-d)" x="90.523" y="47.709" width="135.785" height="137.165" rx="3"/><ellipse fill="#2D2E40" mask="url(#editor-d-d)" cx="158.416" cy="116.888" rx="39.306" ry="39.36"/><rect fill="#FFF" fill-rule="nonzero" mask="url(#editor-d-d)" x="248.939" y="47.709" width="302.538" height="325.617" rx="3"/></g><path d="M209 284c47.125-73.367 81.977-113.013 104.557-118.938 33.87-8.886 23.765 83.14 72.535 72.473 48.77-10.666 54.716-103.974 91.603-108.37 36.887-4.397 56.402 80.946 72.515 88.81 10.742 5.241 24.005-6.094 39.79-34.007" stroke="url(#editor-d-e)" stroke-width="8" stroke-linecap="round" transform="translate(0 242)"/></g></svg>
+            </div>
+          </div>
+          <!-- Design Texts Content -->
+          <div class="f-d-texts-wrapper">
+            <!-- Extensible Editor Texts -->
+            <section class="f-d-texts-section extensible-texts">
+              <h3 class="f-texts-heading">Introducing an extensible editor</h3>
+              <p class="f-texts-sub">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                change the looks of a blog.</p>
+            </section>
+            <!-- Content Management Texts -->
+            <section class="f-d-texts-section management-texts">
+              <h3 class="f-texts-heading">Robust content management</h3>
+              <p class="f-texts-sub">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                by adding customized categories, sections, format, or flow. With this functionality, you're in full control.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Infrastructure Feature -->
+      <section class="feature-section feature-infrastructure">
+        <!-- Infrastructure Feature Wrapper -->
+        <div class="f-i-heading-wrapper">
+          <h2 class="f-heading f-i-heading">State of the Art Infrastructure</h2>
+          <p class="f-sub-heading">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+        <!-- Infrastructure Main -->
+        <div class="f-i-main">
+          <!-- Infrastructure Image -->
+          <div class="f-i-img-wrapper">
+            <!-- Laptop Mobile -->
+            <div class="f-i-img-mobile">
+              <svg width="498" height="359" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="27.795%" x2="100%" y2="72.205%" id="laptop-m-c"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><filter x="-35.1%" y="-60.8%" width="170.1%" height="221.7%" filterUnits="objectBoundingBox" id="laptop-m-a"><feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter><rect id="laptop-m-b" x="0" y="0" width="237" height="157.94" rx="3"/><path d="M3 0h321.953a3 3 0 013 3v4.602H0V3a3 3 0 013-3z" id="laptop-m-e"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(86 17)"><rect fill="#2D2E40" opacity=".08" transform="matrix(1 0 0 -1 0 329)" x="52" y="53" width="223" height="223" rx="111.5"/><rect stroke="#2D2E40" opacity=".5" transform="matrix(1 0 0 -1 0 326)" x="37.5" y="37.5" width="251" height="251" rx="125.5"/><rect stroke="#2D2E40" opacity=".25" transform="matrix(1 0 0 -1 0 326)" x=".5" y=".5" width="325" height="325" rx="162.5"/></g><g filter="url(#laptop-m-a)" transform="translate(85 85)"><rect fill="#535353" fill-rule="nonzero" x="39" y="7" width="252" height="173" rx="12"/><rect fill="#1D1D25" fill-rule="nonzero" x="40" y="9" width="250" height="170" rx="10"/><g transform="translate(47 15)"><mask id="laptop-m-d" fill="#fff"><use xlink:href="#laptop-m-b"/></mask><use fill="url(#laptop-m-c)" fill-rule="nonzero" xlink:href="#laptop-m-b"/><rect fill="#F9F6F6" fill-rule="nonzero" mask="url(#laptop-m-d)" x="-.152" y="28.352" width="237" height="129.709" rx="3"/><g mask="url(#laptop-m-d)" fill-rule="nonzero"><g transform="translate(33.478 17.615)"><rect fill="#FFF" width="49.951" height="120.635" rx="3"/><rect fill="#FFF" x="58.453" width="111.592" height="120.635" rx="3"/><rect fill="#E7E7E7" x="63.235" y="6.405" width="102.027" height="28.291" rx="3"/><rect fill="#E7E7E7" x="63.235" y="40.568" width="30.289" height="28.291" rx="3"/><rect fill="#E7E7E7" x="100.964" y="40.568" width="64.298" height="28.291" rx="3"/></g></g></g><g transform="translate(164)" fill="#4A5166" fill-rule="nonzero" opacity=".098"><rect width="6.12" height="1" rx=".5"/><rect x="7.56" width="1.44" height="1" rx=".5"/></g><g transform="translate(0 178)"><mask id="laptop-m-f" fill="#fff"><use xlink:href="#laptop-m-e"/></mask><use fill="#52526F" fill-rule="nonzero" xlink:href="#laptop-m-e"/><rect fill="#2F2F47" fill-rule="nonzero" mask="url(#laptop-m-f)" x="137.193" y="-18.626" width="53.567" height="23.187" rx="10"/></g><path d="M0 186h328a3 3 0 01-3 3H3a3 3 0 01-3-3z" fill="#393A56" fill-rule="nonzero"/></g></g></svg>
+            </div>
+            <!-- Laptop Desktop -->
+            <div class="f-i-img-desktop">
+              <svg width="974" height="786" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="27.97%" x2="100%" y2="72.03%" id="laptop-d-c"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><filter x="-16.5%" y="-28.5%" width="132.9%" height="157.1%" filterUnits="objectBoundingBox" id="laptop-d-a"><feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter><rect id="laptop-d-b" x="0" y="0" width="506" height="335.872" rx="3"/><path d="M3 0h692.9a3 3 0 013 3v14.105H0V3a3 3 0 013-3z" id="laptop-d-e"/></defs><g fill="none" fill-rule="evenodd"><rect stroke="#2D2E40" opacity=".5" transform="matrix(1 0 0 -1 0 786)" x="59.5" y="59.5" width="665" height="667" rx="332.5"/><rect stroke="#2D2E40" opacity=".25" transform="matrix(1 0 0 -1 0 786)" x=".5" y=".5" width="783" height="785" rx="391.5"/><rect fill="#2D2E40" opacity=".08" transform="matrix(1 0 0 -1 0 786)" x="117" y="117" width="550" height="552" rx="275"/><g transform="translate(190 192)" filter="url(#laptop-d-a)"><rect fill="#535353" fill-rule="nonzero" x="82" y="16" width="538" height="368" rx="12"/><rect fill="#1D1D25" fill-rule="nonzero" x="85" y="19" width="532" height="362" rx="10"/><g transform="translate(99 32)"><mask id="laptop-d-d" fill="#fff"><use xlink:href="#laptop-d-b"/></mask><use fill="url(#laptop-d-c)" fill-rule="nonzero" xlink:href="#laptop-d-b"/><rect fill="#F9F6F6" fill-rule="nonzero" mask="url(#laptop-d-d)" x="-.325" y="60.293" width="506" height="275.838" rx="3"/><g mask="url(#laptop-d-d)" fill-rule="nonzero"><g transform="translate(71.475 37.46)"><rect fill="#FFF" width="106.646" height="256.541" rx="3"/><rect fill="#FFF" x="124.798" width="238.251" height="256.541" rx="3"/><rect fill="#E7E7E7" x="135.009" y="13.622" width="217.83" height="60.162" rx="3"/><rect fill="#E7E7E7" x="135.009" y="86.27" width="64.668" height="60.162" rx="3"/><rect fill="#E7E7E7" x="215.561" y="86.27" width="137.278" height="60.162" rx="3"/></g></g></g><g transform="translate(349)" fill="#4A5166" fill-rule="nonzero" opacity=".098"><rect width="13.6" height="3" rx="1.5"/><rect x="16.8" width="3.2" height="3" rx="1.5"/></g><g transform="translate(0 380)"><mask id="laptop-d-f" fill="#fff"><use xlink:href="#laptop-d-e"/></mask><use fill="#52526F" fill-rule="nonzero" xlink:href="#laptop-d-e"/><rect fill="#2F2F47" fill-rule="nonzero" mask="url(#laptop-d-f)" x="292.371" y="-41.908" width="114.156" height="52.171" rx="10"/></g><path d="M0 397h699a6 6 0 01-6 6H6a6 6 0 01-6-6z" fill="#393A56" fill-rule="nonzero"/></g></g></svg>
+            </div>
+          </div>
+          <!-- Infrastructure Texts Content -->
+          <div class="f-i-texts-wrapper">
+            <!-- Free Texts -->
+            <section class="free-texts">
+              <h3 class="f-texts-heading">Free, open, simple</h3>
+              <p class="f-texts-sub">Blogr is a free and open source application backed by a large community of helpful developers. 
+                It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. 
+                The architecture is clean and is relatively easy to learn.</p>
+            </section>
+            <!-- Powerful Tooling Texts -->
+            <section class="tooling-texts">
+              <h3 class="f-texts-heading">Powerful tooling</h3>
+              <p class="f-texts-sub">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer Wrapper -->
+    <div class="footer-wrapper">
+      <!-- Logo -->
+      <div class="f-section footer-logo">
+        <svg width="101" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M0 30.803V1.486h10.653c1.982 0 3.695.31 5.14.93 1.446.619 2.56 1.5 3.345 2.642.785 1.142 1.177 2.484 1.177 4.026 0 1.404-.303 2.636-.909 3.695a6.48 6.48 0 01-2.56 2.498c1.487.578 2.643 1.494 3.469 2.746.826 1.253 1.239 2.732 1.239 4.439 0 1.707-.44 3.18-1.322 4.418-.88 1.239-2.12 2.202-3.716 2.89-1.596.688-3.482 1.033-5.657 1.033H0zM5.946 6.565v6.73h4.046c1.35 0 2.388-.282 3.118-.846.73-.564 1.094-1.397 1.094-2.498 0-1.101-.365-1.94-1.094-2.519-.73-.578-1.769-.867-3.118-.867H5.946zm0 19.159h4.624c1.542 0 2.732-.33 3.572-.991.84-.66 1.26-1.61 1.26-2.85 0-1.238-.42-2.188-1.26-2.848-.84-.66-2.03-.991-3.572-.991H5.946v7.68zm19.282 5.079V0h5.781v30.803h-5.78zm20.893.619c-1.624 0-3.124-.29-4.5-.867a10.94 10.94 0 01-3.593-2.416 10.96 10.96 0 01-2.374-3.654c-.564-1.404-.846-2.931-.846-4.583 0-1.652.289-3.173.867-4.563a11.354 11.354 0 012.415-3.654 10.96 10.96 0 013.634-2.436c1.39-.578 2.91-.867 4.562-.867 1.625 0 3.125.289 4.501.867a10.94 10.94 0 013.592 2.416 11.01 11.01 0 012.375 3.633c.564 1.39.846 2.911.846 4.563 0 1.651-.289 3.179-.867 4.583a11.297 11.297 0 01-2.416 3.675 10.96 10.96 0 01-3.633 2.436c-1.39.578-2.911.867-4.563.867zm.083-5.203c1.046 0 1.982-.275 2.808-.825.825-.551 1.48-1.301 1.96-2.25.483-.95.723-2.03.723-3.242 0-1.211-.24-2.292-.722-3.241-.482-.95-1.136-1.7-1.961-2.25-.826-.551-1.762-.826-2.808-.826-1.046 0-1.982.275-2.808.825-.826.55-1.48 1.301-1.961 2.25-.482.95-.723 2.03-.723 3.242 0 1.211.241 2.292.723 3.241.482.95 1.135 1.7 1.961 2.25.826.551 1.762.826 2.808.826zm24.155 3.964a9.13 9.13 0 01-3.86-.826 9.492 9.492 0 01-3.118-2.291c-.881-.977-1.57-2.12-2.065-3.427-.495-1.308-.743-2.719-.743-4.233 0-1.569.255-3.02.764-4.356a10.614 10.614 0 012.147-3.489 10.174 10.174 0 013.22-2.333c1.225-.564 2.554-.846 3.985-.846 1.404 0 2.67.282 3.799.846a7.402 7.402 0 012.807 2.457l.124-2.684h5.327v19.2c0 1.68-.269 3.207-.805 4.584-.537 1.376-1.301 2.56-2.292 3.55a10.231 10.231 0 01-3.53 2.292c-1.363.537-2.87.805-4.522.805-1.624 0-3.083-.254-4.376-.764a10.468 10.468 0 01-3.386-2.126 10.035 10.035 0 01-2.271-3.18L67.097 32a5.452 5.452 0 001.92 1.879c.784.454 1.672.681 2.663.681 1.074 0 2.003-.24 2.787-.723.785-.481 1.397-1.156 1.838-2.023.44-.867.66-1.879.66-3.035v-1.775a7.793 7.793 0 01-2.828 2.333c-1.143.564-2.402.846-3.778.846zm1.404-5.12c1.018 0 1.92-.254 2.704-.764a5.556 5.556 0 001.879-2.064c.468-.867.702-1.851.702-2.952 0-1.102-.234-2.086-.702-2.953a5.556 5.556 0 00-1.879-2.064c-.784-.51-1.686-.764-2.704-.764-1.019 0-1.92.255-2.705.764a5.556 5.556 0 00-1.879 2.064c-.468.867-.702 1.851-.702 2.953 0 1.1.234 2.085.702 2.952a5.556 5.556 0 001.88 2.064c.784.51 1.685.764 2.704.764zm15.607 5.74V9h5.327l.206 3.304c.55-1.157 1.294-2.044 2.23-2.664.936-.62 2.037-.929 3.303-.929.386 0 .77.035 1.156.103.386.07.73.159 1.033.269l-.62 5.698a4.361 4.361 0 00-.929-.227 7.495 7.495 0 00-.97-.062c-1.597 0-2.822.489-3.675 1.466-.853.977-1.28 2.36-1.28 4.15v10.694h-5.78z" fill="#FFF" fill-rule="nonzero"/></svg>
+      </div>
+      <!-- Footer Navigation -->
+      <nav class="f-section f-nav">
+        <!-- Product Sub Navigation -->
+        <div class="f-sub-nav-wrapper">
+          <h4 class="f-heading">Product</h4>
+          <ul class="f-sub-nav">
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Overview</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Pricing</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Marketplace</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Features</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Integrations</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Company Sub Navigation -->
+        <div class="f-sub-nav-wrapper">
+          <h4 class="f-heading">Company</h4>
+          <ul class="f-sub-nav">
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">About</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Team</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Blog</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Connect Sub Navigation -->
+        <div class="f-sub-nav-wrapper">
+          <h4 class="f-heading">Connect</h4>
+          <ul class="f-sub-nav">
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Contact</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">Newsletter</a>
+            </li>
+            <li class="f-sub-nav-item">
+              <a href="#" class="f-sub-nav-link" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

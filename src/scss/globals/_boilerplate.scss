@@ -4,8 +4,12 @@ html {
 }
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 body {
-    color: rgb(224, 224, 224);
-    background-color: hsl(252, 67%, 43%);
+    background-color: rgb(252, 252, 252);
+}
+img {
+    border: none;
 }

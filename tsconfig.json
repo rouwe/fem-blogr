@@ -1,0 +1,8 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "include": ["src/ts/**/*.ts"],
+    "exclude": ["node_modules", "src/ts/test/**/*.spec.ts"],
+    "compilerOptions": {
+        "noImplicitAny": true,
+    }
+}

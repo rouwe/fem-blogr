@@ -1,3 +1,3 @@
-let message: string = 'Watching J!';
+let message = 'Watching!';
 console.log(message);
 // throw new Error("Test")

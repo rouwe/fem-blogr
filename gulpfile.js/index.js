@@ -1,40 +1,70 @@
-const { src, dest, watch, series } = require('gulp');
-const sourcemaps = require('gulp-sourcemaps');
-const ts = require('gulp-typescript');
-const terser = require('gulp-terser');
+const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
+const ts = require('gulp-typescript');
+const tsProject = ts.createProject("tsconfig.json");
+const browserSync = require('browser-sync').create(); 
 
-function compileTypescript() {
-    // Transpile Typescript, concatenate, and minify js
-    return src('src/ts/*.ts')
+const GLOBS = {
+    sass: {
+        src: 'src/scss/*.scss',
+        outputPath: 'dist/assets/css'
+    },
+    ts: {
+        src: 'src/ts/**/*.ts',
+        outputPath: 'dist/assets/js',
+        outputName: 'main.js'
+    }
+};
+// Build stylesheet
+function buildStyles() {
+    return gulp.src(GLOBS.sass.src)
         .pipe(sourcemaps.init())
-        .pipe(ts({
-            "module": "commonjs",
-            "noImplicitAny": true,
-            "removeComments": true,
-            "preserveConstEnums": true,
-            "sourceMap": true,
-        }))
-        .pipe(terser({
-            toplevel: true
-        }))
-        .pipe(concat('main.js'))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write('./'))
-        .pipe(dest('dist/assets/js'));
+        .pipe(gulp.dest(GLOBS.sass.outputPath));
+};
+
+// Rebuild CSS
+function watchStyles() {
+    buildStyles();
+    browserSync.reload();
 }
-function compileSass() {
-    return src('src/scss/**/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
+
+// Build JS
+function buildJs() {
+    return tsProject.src()
+        .pipe(sourcemaps.init()).on('error', (err) => {
+            console.error(err);
+        })
+        .pipe(tsProject())
+        .pipe(concat(GLOBS.ts.outputName))
         .pipe(sourcemaps.write('./'))
-        .pipe(dest('dist/assets/css'));
+        .pipe(gulp.dest('dist/assets/js'))
 }
-function watchTypescript() {
-    watch('src/ts/*.ts', compileTypescript);
+
+// Rebuild JS
+function watchJs() {
+    buildJs();
+    browserSync.reload();
 }
-exports.default = series(
-    compileSass,
-    compileTypescript,
-    watchTypescript,
-    )
+
+// Browser sync
+function serve() {
+    // Serve files 
+    browserSync.init({
+        server: {
+            baseDir: './'
+        },
+        open: false
+    });
+    // Watch Sass files
+    browserSync.watch(GLOBS.sass.src).on('change', watchStyles);
+    browserSync.watch(GLOBS.ts.src).on('change', watchJs);
+};
+exports.default = gulp.series(
+    buildStyles,
+    buildJs,
+    serve
+)

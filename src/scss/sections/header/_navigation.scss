@@ -69,8 +69,9 @@
         border-radius: 0.5rem;
         display: none;
         flex-direction: column;
+        margin: 1.25rem 0 0.5rem;
         padding: 1.7rem;
-        row-gap: 1.2rem;
+        row-gap: 1.1rem;
         
         a {
             color: Colors.$sub-nav-link;
@@ -78,9 +79,6 @@
             font-weight: 600;
             letter-spacing: -0.03125rem;
         }
-    }
-    .nav-item-wrapper:nth-child(3) .sub-nav-wrapper {
-        display: flex;
     }
 }
 

@@ -3,10 +3,12 @@
 
 .header {
     align-items: center;
-    background-color: Colors.$p-light-red;
     display: flex;
     justify-content: space-between;
     padding: 3.25rem 1.5rem 3.25rem 1.4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     .header-logo {
         position: relative;

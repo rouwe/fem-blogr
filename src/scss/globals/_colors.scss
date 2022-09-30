@@ -14,9 +14,6 @@ $n-very-dark-black-blue: hsl(240, 10%, 16%); // Footer background
 // Background gradient - Intro/CTA mobile nav
 $g-light-red: hsl(353, 100%, 62%);
 $g-very-light-red: hsl(13, 100%, 72%);
-@mixin intro-cta-gradient($angle: 90deg) {
-    background-image: linear-gradient($angle, $g-very-light-red, $g-light-red);
-}
 
 // Background gradient - body
 $g-very-dark-gray-blue: hsl(237, 17%, 21%);

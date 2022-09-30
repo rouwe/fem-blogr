@@ -1,1 +1,25 @@
-@forward 'navigation'
+@forward 'navigation';
+@use '../../globals/colors' as Colors;
+
+.header {
+    align-items: center;
+    background-color: Colors.$p-light-red;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.25rem 1.5rem 3.25rem 1.4rem;
+
+    .header-logo {
+        position: relative;
+        right: 2.6%;
+        transform: scale(0.81);
+    }
+
+    svg {
+        display: block;
+    }
+
+    .menu-close {
+        display: none;
+        padding-right: 0.1rem;
+    }
+}

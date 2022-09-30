@@ -1,0 +1,104 @@
+@use '../../globals/colors' as Colors;
+
+.header-actions {
+    display: flex;
+    height: fit-content;
+    left: 0;
+    position: absolute;
+    padding: 0 1.6rem;
+    top: 7.8rem;
+    width: 100%;
+    z-index: 5;
+
+    .header-actions-wrapper {
+        background-color: Colors.$n-white;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 1rem 1.75rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.header-nav {
+    padding: 1rem 0 1.5rem;
+
+    .nav-wrapper,
+    .nav-item-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-wrapper {
+        row-gap: 1.7rem;
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: center;
+
+        .nav-item-button {
+            align-items: center;
+            border: none;
+            color: Colors.$p-very-dark-blue;
+            column-gap: 0.5rem;
+            display: flex;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -0.03rem;
+        }
+
+        span {
+            display: inline-block;
+
+            .arrow-light {
+                display: none;
+            }
+        }
+    }
+    .sub-nav-wrapper {
+        display: none;
+    }
+}
+.header-cta {
+    align-items: center;
+    display: flex;
+    border-top: 0.0625rem solid hsla(0, 0%, 50%, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+    padding: 1.25rem 1rem 1rem;
+    
+    a {
+        display: inline-block;
+        font-size: 1.05rem;
+        font-weight: 500;
+        padding: 0.8rem 2.5rem;
+        text-decoration: none;
+    }
+
+    .cta {
+        border-radius: 2rem;
+    }
+
+    .cta-login {
+        background-color: Colors.$n-white;
+        
+        a {
+            color: Colors.$p-very-dark-blue;
+        }
+    }
+
+    .cta-sign-up {
+        @include Colors.intro-cta-gradient;
+
+        a {
+            color: Colors.$n-white;
+        }
+    }
+}

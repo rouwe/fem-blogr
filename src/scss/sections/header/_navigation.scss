@@ -5,7 +5,7 @@
     height: fit-content;
     left: 0;
     position: absolute;
-    padding: 0 1.6rem;
+    padding: 0 1.5rem;
     top: 7.8rem;
     width: 100%;
     z-index: 5;
@@ -15,7 +15,7 @@
         border-radius: 0.25rem;
         display: flex;
         flex-flow: column nowrap;
-        padding: 1rem 1.75rem;
+        padding: 1rem 1.5rem;
         text-align: center;
         width: 100%;
     }
@@ -23,10 +23,14 @@
     ul {
         list-style-type: none;
     }
+    
+    a {
+        text-decoration: none;
+    }
 }
 
 .header-nav {
-    padding: 1rem 0 1.5rem;
+    padding: 1rem 0 0;
 
     .nav-wrapper,
     .nav-item-wrapper {
@@ -44,6 +48,7 @@
 
         .nav-item-button {
             align-items: center;
+            background-color: Colors.$n-white;
             border: none;
             color: Colors.$p-very-dark-blue;
             column-gap: 0.5rem;
@@ -54,32 +59,46 @@
         }
 
         span {
-            display: inline-block;
-
             .arrow-light {
                 display: none;
             }
         }
     }
     .sub-nav-wrapper {
+        background-color: Colors.$sub-nav-item-bg;
+        border-radius: 0.5rem;
         display: none;
+        flex-direction: column;
+        padding: 1.7rem;
+        row-gap: 1.2rem;
+        
+        a {
+            color: Colors.$sub-nav-link;
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: -0.03125rem;
+        }
+    }
+    .nav-item-wrapper:nth-child(3) .sub-nav-wrapper {
+        display: flex;
     }
 }
+
 .header-cta {
     align-items: center;
     display: flex;
     border-top: 0.0625rem solid hsla(0, 0%, 50%, 0.2);
     flex-direction: column;
     justify-content: center;
-    row-gap: 0.5rem;
+    margin-top: 1rem;
     padding: 1.25rem 1rem 1rem;
+    row-gap: 0.5rem;
     
     a {
         display: inline-block;
-        font-size: 1.05rem;
-        font-weight: 500;
+        font-size: 1.1rem;
+        font-weight: 600;
         padding: 0.8rem 2.5rem;
-        text-decoration: none;
     }
 
     .cta {
@@ -99,6 +118,10 @@
 
         a {
             color: Colors.$n-white;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.9rem 2.5rem;
         }
     }
 }

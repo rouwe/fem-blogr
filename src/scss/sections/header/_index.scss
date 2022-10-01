@@ -24,3 +24,17 @@
         padding-right: 0.1rem;
     }
 }
+
+@media all and (min-width: 90rem) {
+    .header {
+        padding: 3.7rem 10.45rem;
+
+        .header-logo {
+            transform: scale(1);
+        }
+
+        .header-menu-toggler {
+            display: none;
+        }
+    }
+}

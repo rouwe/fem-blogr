@@ -123,3 +123,84 @@
         }
     }
 }
+
+@media all and (min-width: 90rem) {
+    .header-actions {
+        display: flex;
+        margin: 0 0 0 4rem;
+        padding: 0;
+        position: static;
+
+        .header-actions-wrapper {
+            background-color: transparent;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        padding: 0.5rem 0 0;
+
+        .nav-wrapper {
+            align-items: center;
+            column-gap: 2.01rem;
+            flex-direction: row;
+        }
+
+        .nav-item {
+            .nav-item-button {
+                background-color: transparent;
+                color: Colors.$n-white;
+                font-size: 1rem;
+                letter-spacing: 0.005125rem;
+                opacity: 0.7;
+
+                .arrow-light {
+                    display: block;
+                }
+
+                .arrow-dark {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header-cta {
+        border-top: none;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        .cta {
+            a {
+                font-size: 1rem;
+                padding: 0.9rem 2.3rem;
+            }
+        }
+
+        .cta-login {
+            background-color: transparent;
+
+            a {
+                color: Colors.$n-white;
+                padding: 0.75rem 1.95rem 0.5rem 2.15rem;
+                font-family: "Ubuntu", sans-serif;
+                opacity: 0.65;
+            }
+        }
+
+        .cta-sign-up {
+            background-color: Colors.$n-white;
+            background-image: none;
+
+            a {
+                color: Colors.$p-light-red;
+                margin-left: 0.25rem;
+            }
+        }
+    }
+}

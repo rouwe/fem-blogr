@@ -1,14 +1,75 @@
 @font-face {
-    font-family: 'Overpass';
-    src: url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;1,300;1,600&display=swap"');
-    font-weight: 300 600;
+    font-family: "Overpass";
+    src: local("Overpass Light"),
+    local("Overpass-Light"),
+    url("../../../src/assets/fonts/overpass/static/Overpass-Light.ttf") format("truetype"),
+    url("../../../src/assets/fonts/overpass/static/Overpass-ExtraLightItalic.ttf") format("truetype"),
+    url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,300;&display=swap.ttf") format("truetype");
+    font-weight: 300;
     font-style: normal italic;
     font-display: swap;
 }
+
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-    font-weight: 400 700;
+    font-family: "Overpass";
+    src: local("Overpass Semi-Bold"),
+    local("Overpass-Semi-Bold"),
+    url("../../../src/assets/fonts/overpass/static/Overpass-SemiBold.ttf") format('truetype'),
+    url("../../../src/assets/fonts/overpass/static/Overpass-SemiBoldItalic.ttf") format('truetype'),
+    url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,600;1,600&display=swap.ttf") format('truetype');
+    font-weight: 600;
     font-style: normal italic;
     font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: local("Ubuntu Regular"),
+    local("Ubuntu-Regular"),
+    url("../../../src/assets/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype"),
+    url("../../../src/assets/fonts/ubuntu/Ubuntu-Italic.ttf") format("truetype"),
+    url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap") format("truetype");
+    font-weight: 400;
+    font-style: normal italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: local("Ubuntu Medium"),
+    local("Ubuntu-Medium"),
+    url("../../../src/assets/fonts/ubuntu/Ubuntu-Medium.ttf") format("truetype"),
+    url("../../../src/assets/fonts/ubuntu/Ubuntu-MediumItalic.ttf") format("truetype"),
+    url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap") format("truetype");
+    font-weight: 500;
+    font-style: normal italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: local("Ubuntu Bold"),
+    local("Ubuntu-Bold"),
+    url("../../../src/assets/fonts/ubuntu/Ubuntu-Bold.ttf") format("truetype"),
+    url("../../../src/assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf") format("truetype"),
+    url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap") format("truetype");
+    font-weight: 700;
+    font-style: normal italic;
+    font-display: swap;
+}
+
+.nav-item-button,
+.sub-nav-wrapper a,
+.hero-heading,
+.hero-sub-heading,
+.f-heading,
+.f-sub-heading,
+.f-texts-heading,
+.cta,
+.f-texts-sub {
+    font-family: Overpass, sans-serif;
+}
+.f-nav-heading,
+.f-sub-nav-link {
+    font-family: Ubuntu, sans-serif;
 }

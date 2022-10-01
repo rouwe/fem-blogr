@@ -1,0 +1,59 @@
+@use '../../globals/colors' as Colors;
+
+.hero-wrapper {
+    align-items: center;
+    background: local url('../../../src/assets/images/bg-pattern-intro-mobile.svg')
+        36.5% 34%/auto no-repeat content-box padding-box,
+        linear-gradient(145deg, Colors.$g-very-light-red, Colors.$g-light-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.1rem;
+    row-gap: 2.5rem;
+    text-align: center;
+    width: 100%;
+
+    .hero-header {
+        margin-top: 2rem;
+        
+        .hero-heading {
+            color: Colors.$n-white;
+            font-size: 2.25rem;
+            font-weight: 600;
+            letter-spacing: -0.075rem;
+            padding-bottom: 1rem;
+        }
+
+        .hero-sub-heading {
+            color: Colors.$n-white;
+            font-size: 1.15rem;
+            font-weight: 300;
+            opacity: 0.75;
+        }
+    }
+
+    .hero-cta {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-top: 0.75rem;
+        width: 100%;
+
+        a {
+            border: 1px solid Colors.$n-white;
+            border-radius: 2rem;
+            color: Colors.$n-white;
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.85rem 1.6rem 0.7rem;
+            text-decoration: none;
+        }
+
+        .cta-start a {
+            background-color: Colors.$n-white;
+            color: Colors.$p-light-red;
+            padding: 0.85rem 1.1rem 0.7rem;
+        }
+    }
+}

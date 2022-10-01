@@ -1,0 +1,26 @@
+@forward 'sections';
+@use '../../globals/colors' as Colors;
+
+.footer {
+    background-color: Colors.$n-very-dark-black-blue;
+    border-radius: 0 6.25rem 0 0;
+    display: flex;
+    padding: 4.7rem 1.5rem;
+    text-align: center;
+    min-height: 60vmax;
+
+    .footer-wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        min-width: 100%;
+        row-gap: 3.75rem;
+    }
+    
+    ul {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

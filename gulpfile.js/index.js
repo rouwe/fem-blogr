@@ -8,7 +8,7 @@ const browserSync = require('browser-sync').create();
 
 const GLOBS = {
     sass: {
-        src: 'src/scss/*.scss',
+        src: 'src/scss/**/*.scss',
         outputPath: 'dist/assets/css'
     },
     ts: {
@@ -22,6 +22,7 @@ function buildStyles() {
     return gulp.src(GLOBS.sass.src)
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(concat('style.css'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(GLOBS.sass.outputPath));
 };

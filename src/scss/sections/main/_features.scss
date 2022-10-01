@@ -1,0 +1,111 @@
+@use '../../globals/colors' as Colors;
+
+.features-container {
+    padding: 6.5rem 1.5rem;
+    text-align: center;
+    overflow: hidden;
+
+    .feature-section {
+        &:nth-child(1) {
+            margin: 0 0 3rem;
+        }
+
+        .f-heading,
+        .f-texts-heading {
+            color: Colors.$p-very-dark-blue;
+            font-size: 1.725rem;
+            letter-spacing: -0.0625rem;
+            word-spacing: 0.0625rem;
+        }
+
+        .f-img-wrapper {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+
+            .f-img-mobile {
+                display: flex;
+                padding: 2.75rem 0;
+                width: fit-content;
+            }
+
+            .f-img-desktop {
+                display: none;
+                
+            }
+        }
+        .f-main {
+            .f-texts-section {
+                margin: 0 0 2rem;
+                padding: 0.4rem 0.5rem 0;
+
+                .f-texts-heading {
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                    letter-spacing: -0.0325rem;
+                    margin: 0 0 1rem;
+                    padding: 0 0.5rem 0;
+                    word-spacing: 0.0325rem;
+                }
+            }
+
+            .f-texts-section:nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
+
+        .f-texts-sub,
+        .f-sub-heading {
+            color: Colors.$n-very-dark-grayish-blue;
+            font-size: 1.05rem;
+            line-height: 1.75rem;
+            word-spacing: 0.0625rem;
+        }
+    }
+}
+
+.feature-infrastructure {
+    padding-top: 12rem;
+    position: relative;
+
+    .f-i-heading-wrapper {
+        background: scroll url('../../../src/assets/images/bg-pattern-circles.svg') 
+            50% -14.75rem/160% no-repeat padding-box,
+            linear-gradient(320deg, Colors.$g-very-desaturated-blue 10%, Colors.$g-very-dark-gray-blue);
+        border-radius: 0 7rem 0 6.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 -1.5rem;
+        min-height: 107.5vmax;
+        padding: 1rem 1.5rem 7rem;
+        row-gap: 1.5rem;
+        overflow: hidden;
+
+        .f-i-heading {
+            color: Colors.$n-white;
+            font-size: 2.5rem;
+        }
+
+        .f-sub-heading {
+            color: Colors.$n-white;
+            opacity: 0.8;
+        }
+
+        .f-phone-container {
+            display: flex;
+            justify-content: center;
+            left: 50%;
+            right: 50%;
+            position: absolute;
+            top: -5rem;
+
+            .f-phone-wrapper {
+                display: flex;
+                transform: scale(0.70);
+                width: fit-content;
+            }
+        }
+    }
+}

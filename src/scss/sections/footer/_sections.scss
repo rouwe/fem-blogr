@@ -1,0 +1,36 @@
+@use '../../globals/colors' as Colors;
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+.f-nav {
+    &,
+    .f-sub-nav-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+    flex-wrap: wrap;
+    row-gap: 2.5rem;
+    margin: 1rem 0 0;
+
+    .f-sub-nav-wrapper {
+        row-gap: 1.2rem;
+        
+        .f-nav-heading {
+            color: Colors.$n-white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+    
+        .f-sub-nav-item {
+            margin: 0.75rem 0;
+        }
+
+        a {
+            color: Colors.$n-grayish-blue;
+            font-size: 1.15rem;
+        }
+    }
+}

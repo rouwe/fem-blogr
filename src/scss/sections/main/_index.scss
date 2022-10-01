@@ -1,0 +1,21 @@
+@forward 'hero';
+@forward 'features';
+@use '../../globals/colors' as Colors;
+
+.main {
+    display: grid;
+    grid-template: "hero" auto "features" auto / 100%;
+
+    .hero-container {
+        background-image: linear-gradient(180deg, Colors.$g-very-light-red, Colors.$g-light-red);
+        border-bottom-left-radius: 6.35rem;
+        display: flex;
+        grid-area: hero;
+        min-height: 102vh;
+        overflow: hidden;
+    }
+    
+    .features-container {
+        grid-area: features;
+    }
+}

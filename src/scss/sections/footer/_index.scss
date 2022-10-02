@@ -24,3 +24,56 @@
         }
     }
 }
+
+@media all and (min-width: 90rem) {
+    .footer {
+        text-align: left;
+        margin: 7rem 0 0;
+        min-height: max-content;
+        padding: 4.5rem 4rem 4rem;
+
+        .footer-wrapper {
+            flex-wrap: nowrap;
+            column-gap: 2rem;
+
+            &,
+            .f-nav {
+                flex-direction: row;
+                row-gap: initial;
+            }
+
+            .footer-logo {
+                padding: 0 2rem;
+                width: 23.25%;
+            }
+
+            .f-nav {
+                flex: 1;
+                margin: 0.33rem 0 0;
+                padding: 0 3rem;
+
+                & > * {
+                    flex: 1 1 100%;
+                }
+
+                .f-sub-nav-wrapper {
+                    row-gap: 1.35rem;
+                    
+                    .f-nav-heading,
+                    .f-sub-nav-link {
+                        font-size: 0.95rem;
+                    }
+    
+                    .f-sub-nav-item {
+                        margin: 0.9rem 0;
+                    }
+    
+                    .f-sub-nav-link {
+                        opacity: 0.8;
+                    }
+                }
+
+            }
+        }
+    }
+}

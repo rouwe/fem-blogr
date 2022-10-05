@@ -109,3 +109,20 @@ function getDeviceBreakpoints(): DeviceBreakPoint {
     }
     return breakPointsObj;
 }
+
+function initDisplayProp(targets: HTMLElement | HTMLElement[], initProp: string): void {
+    /**
+     * Initialize the display property of an element to be @displayProp or 'none'.
+     * @param target: one or more elements.
+     * @param initProp: be used for initializing display property.
+     */
+    if (targets && typeof targets === 'object') {
+        if (targets instanceof Array) {
+            for (const target of targets) {
+                target.style.display = initProp;
+            }
+        } else {
+            targets.style.display = initProp;
+        }
+    }
+}

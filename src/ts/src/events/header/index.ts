@@ -64,3 +64,54 @@ function navItemToggleEvent(id: string, eventHandler: () => void): void {
         console.error(`Error: found(${navItemsArr.length}) element!`);
     }
 }
+
+function menuToggleHandler(openMenu: HTMLElement, closeMenu: HTMLElement): void {
+    /**
+     * Event handler that toggles mobile navigation menu.
+     * @param openMenu: element for opening menu.
+     * @param closeMenu: element for closing menu.
+     */
+    const [open, close] = ['block', 'none'];
+    const navigationClass = '.header-actions';
+    const navigation: HTMLDivElement | null = document.querySelector(navigationClass);
+    if (navigation && typeof navigation === 'object') {
+        // Toggle navigation
+        displayToggler(navigation, open);
+        const navigationDisplayState = navigation.style.display;
+        if (navigationDisplayState === open) {
+            // navigation is open
+            displayToggler(openMenu, open);
+            displayToggler(closeMenu, open);
+        } else {
+            // navigation is close
+            displayToggler(openMenu, open);
+            displayToggler(closeMenu, open);
+        }
+    }
+}
+
+function addMenuToggleEvent(togglerId: string, openMenuId: string, closeMenuId: string, eventHandler: (openMenu: HTMLElement, closeMenu: HTMLElement) => void): void {
+    /**
+     * Add event listener for toggling mobile menu.
+     * @param togglerId: element to be toggled.
+     * @param openMenuId: open menu element.
+     * @param closeMenuId: close menu element.
+     * @param eventHandler: toggle event handler.
+     */
+    if (togglerId && openMenuId && closeMenuId) {
+        const toggler: HTMLElement | null = document.querySelector(togglerId);
+        const openMenu: HTMLElement | null = document.querySelector(openMenuId);
+        const closeMenu: HTMLElement | null = document.querySelector(closeMenuId);
+        if (toggler && openMenu && closeMenu) {
+            // Initialize openMenu & closeMenu display property
+            initDisplayProp(openMenu, 'block');
+            initDisplayProp(closeMenu, 'none');
+            // Add event
+            if (typeof toggler === 'object' && typeof toggler === 'object' && typeof toggler === 'object') {
+                toggler.addEventListener('click', () => {
+                    eventHandler(openMenu, closeMenu);
+                });
+            }
+        }
+    }
+}

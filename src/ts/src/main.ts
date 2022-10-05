@@ -1,0 +1,1 @@
+navItemToggleEvent('.nav-item-wrapper', navItemClickHandler);

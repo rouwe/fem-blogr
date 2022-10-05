@@ -39,7 +39,9 @@ function buildJs() {
         .pipe(sourcemaps.init()).on('error', (err) => {
             console.error(err);
         })
-        .pipe(tsProject())
+        .pipe(tsProject()).on('error', (err) => {
+            console.error(err);
+        })
         .pipe(concat(GLOBS.ts.outputName))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('dist/assets/js'))

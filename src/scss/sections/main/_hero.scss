@@ -44,9 +44,10 @@
             border-radius: 2rem;
             color: Colors.$n-white;
             display: block;
+            font-family: "Ubuntu", sans-serif;
             font-size: 1rem;
             font-weight: 600;
-            padding: 0.85rem 1.6rem 0.7rem;
+            padding: 0.85rem 1.6rem;
             text-decoration: none;
         }
 
@@ -54,6 +55,60 @@
             background-color: Colors.$n-white;
             color: Colors.$p-light-red;
             padding: 0.85rem 1.1rem 0.7rem;
+        }
+    }
+}
+
+@media all and (min-width: 90rem) {
+    .hero-wrapper {
+        background: local url('../../../src/assets/images/bg-pattern-intro-desktop.svg')
+            26.25% 52%/auto no-repeat content-box padding-box,
+            linear-gradient(105deg, Colors.$g-very-light-red, Colors.$g-light-red);
+        row-gap: 2.15rem;
+
+        .hero-header {
+            margin: 5rem 0 0 0;
+
+            .hero-heading {
+                font-size: 3.8rem;
+            }
+
+            .hero-sub-heading {
+                font-size: 1.25rem;
+            }
+        }
+
+        .hero-cta {
+            column-gap: 1.25rem;
+            justify-content: center;
+
+            .cta a {
+                padding: 0.9rem 1.1rem 0.9rem;
+                transition: all 100ms ease-in 0s;
+
+                &:active {
+                    transform: scale(0.975);
+                }
+            }
+
+            .cta-start {
+                &:hover {    
+                    a {
+                        background-color: Colors.$p-very-light-red;
+                        border-color: Colors.$p-very-light-red;;
+                        color: Colors.$n-white;
+                    }
+                }
+            }
+
+            .cta-learn a {
+                padding: 0.8rem 1.5rem 0.9rem;
+
+                &:hover {
+                    background-color: Colors.$n-white;
+                    color: Colors.$p-very-light-red;
+                }
+            }
         }
     }
 }

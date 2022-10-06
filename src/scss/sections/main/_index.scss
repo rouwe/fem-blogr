@@ -19,3 +19,11 @@
         grid-area: features;
     }
 }
+
+@media all and (min-width: 90rem) {
+    .main {
+        .hero-container {
+            min-height: 92.25vh;
+        }
+    }
+}

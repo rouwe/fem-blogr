@@ -1,11 +1,19 @@
 @use '../../globals/colors' as Colors;
+@use 'sass:meta';
+@use 'sass:math';
+
+$childHeight: 579px; // illustration-phone.svg (size)
 
 .features-container {
+    display: flex;
+    flex-direction: column;
     padding: 6.5rem 1.5rem;
     text-align: center;
     overflow: hidden;
 
     .feature-section {
+        display: flex;
+        flex-direction: column;
         &:nth-child(1) {
             margin: 0 0 3rem;
         }
@@ -36,6 +44,8 @@
             }
         }
         .f-main {
+            display: flex;
+            flex-direction: column-reverse;
             .f-texts-section {
                 margin: 0 0 2rem;
                 padding: 0.4rem 0.5rem 0;
@@ -66,7 +76,7 @@
 }
 
 .feature-infrastructure {
-    padding-top: 12rem;
+    margin: 12rem 0 0 0;
     position: relative;
 
     .f-i-heading-wrapper {
@@ -78,10 +88,15 @@
         flex-direction: column;
         justify-content: flex-end;
         margin: 0 -1.5rem;
-        min-height: 107.5vmax;
+        min-height: 39.25rem;
         padding: 1rem 1.5rem 7rem;
-        row-gap: 1.5rem;
         overflow: hidden;
+
+        .heading-texts {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+        }
 
         .f-i-heading {
             color: Colors.$n-white;
@@ -96,15 +111,135 @@
         .f-phone-container {
             display: flex;
             justify-content: center;
-            left: 50%;
-            right: 50%;
+            left: 0%;
+            right: 0%;
             position: absolute;
-            top: -5rem;
+            top: #{calc($childHeight / -2)};
 
             .f-phone-wrapper {
                 display: flex;
                 transform: scale(0.70);
                 width: fit-content;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 90rem) {
+    .features-container {
+        padding: 9.8rem 10.45rem;
+
+        .feature-section {
+            .f-heading {
+                font-size: 2.4rem;
+            }
+
+            .f-main {
+                flex-flow: row nowrap;
+                margin: 6rem 0;
+                min-height: 28.75rem;
+                position: relative;
+                text-align: left;
+            }
+
+            .f-texts-wrapper {
+                width: 50%;
+
+                .f-texts-section {
+                    padding: 0 1rem 0 0;
+
+                    .f-texts-heading {
+                        margin: 0 0 1.5rem;
+                        padding: 0;
+                    }
+                }
+
+                .f-texts-section:nth-child(1) {
+                    margin: 0.55rem 0 4.95rem;
+                }
+
+                .f-texts-section:nth-child(2) {
+                    padding: 0 1.25rem 0 0;
+                }
+            }
+
+            .f-img-wrapper {
+                position: absolute;
+                left: 56%;
+                top: -50%;
+                width: fit-content;
+
+                .f-img-mobile {
+                    display: none;
+                }
+
+                .f-img-desktop {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    .features-container {
+        .feature-infrastructure {
+            margin: 6.5rem 0 0;
+    
+            .f-i-heading-wrapper {
+                background-position: -50% 82%;
+                background-size: auto;
+                border-radius: 0 6.25rem 0 6.25rem;
+                flex-direction: row;
+                margin: 0 -10.45rem;
+                min-height: 25rem;
+                padding: 1rem 1.5rem;
+    
+                .heading-texts {
+                    align-items: flex-start;
+                    justify-content: center;
+                    max-width: 55%;
+                    min-width: 50%;
+                    padding: 2.5rem 5.5rem 2.5rem 5.3rem; 
+                    row-gap: 1.2rem;
+                    text-align: left;
+
+                    .f-i-heading {
+                        margin: 0.5rem 0 0;
+                    }
+
+                    .f-sub-heading {
+                        font-size: 0.95rem;
+                        letter-spacing: 0.0525rem;
+                        padding: 0 3rem 0 0;
+                    }
+                }
+    
+                .f-phone-container {
+                    left: -57.5%;
+                    top: #{calc($childHeight / -8.5)};
+    
+                    .f-phone-wrapper {
+                        transform: initial;
+                    }
+                }
+            }
+    
+            .f-main {
+                justify-content: flex-end;
+                margin: 18.5rem 0 0;
+
+                .f-texts-wrapper {
+                    padding: 0 0 0 1rem;
+
+                    .f-texts-section:nth-child(2) {
+                        padding: 0 0.75rem 0 0;
+                    }
+                }
+    
+                .f-img-wrapper {
+                    left: initial;
+                    right: 52.25%;
+                    top: -39%;
+                }
             }
         }
     }

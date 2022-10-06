@@ -24,3 +24,23 @@
         }
     }
 }
+
+@media all and (min-width: 90rem) {
+    .footer {
+        text-align: left;
+        margin: 7rem 0 0;
+        min-height: max-content;
+        padding: 4.5rem 4rem 4rem;
+
+        .footer-wrapper {
+            flex-wrap: nowrap;
+            column-gap: 2rem;
+
+            &,
+            .f-nav {
+                flex-direction: row;
+                row-gap: initial;
+            }
+        }
+    }
+}

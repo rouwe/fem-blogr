@@ -3,6 +3,8 @@
     "include": ["src/ts/**/*.ts"],
     "exclude": ["node_modules", "src/ts/test/**/*.spec.ts"],
     "compilerOptions": {
+        "lib": ["DOM", "DOM.Iterable"],
         "noImplicitAny": true,
+        "strictNullChecks": true
     }
 }

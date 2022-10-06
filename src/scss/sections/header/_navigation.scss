@@ -42,6 +42,10 @@
         row-gap: 1.7rem;
     }
 
+    .nav-item-wrapper {
+        position: relative;
+    }
+
     .nav-item {
         display: flex;
         justify-content: center;
@@ -52,10 +56,17 @@
             border: none;
             color: Colors.$p-very-dark-blue;
             column-gap: 0.5rem;
+            cursor: pointer;
             display: flex;
             font-size: 1.2rem;
             font-weight: 600;
             letter-spacing: -0.03rem;
+
+            &:hover {
+                text-decoration: underline Colors.$n-white solid 0.15rem;
+                text-shadow: 0 0 0.1rem Colors.$n-white;
+                opacity: 1;
+            }
         }
 
         span {
@@ -64,6 +75,7 @@
             }
         }
     }
+
     .sub-nav-wrapper {
         background-color: Colors.$sub-nav-item-bg;
         border-radius: 0.5rem;
@@ -75,6 +87,7 @@
         
         a {
             color: Colors.$sub-nav-link;
+            display: inline-block;
             font-size: 1.05rem;
             font-weight: 600;
             letter-spacing: -0.03125rem;
@@ -113,13 +126,138 @@
 
     .cta-sign-up {
         background-image: linear-gradient(90deg, Colors.$g-very-light-red, Colors.$g-light-red);
-
+        
         a {
             color: Colors.$n-white;
             font-family: 'Ubuntu', sans-serif;
             font-size: 1rem;
             font-weight: 700;
             padding: 0.9rem 2.5rem;
+        }
+    }
+}
+
+@media all and (min-width: 90rem) {
+    .header-actions {
+        display: flex;
+        margin: 0 0 0 4rem;
+        padding: 0;
+        position: static;
+
+        .header-actions-wrapper {
+            background-color: transparent;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        padding: 0.5rem 0 0;
+
+        .nav-wrapper {
+            align-items: center;
+            column-gap: 2.01rem;
+            flex-direction: row;
+
+            .sub-nav-wrapper {
+                background-color: Colors.$n-white;
+                left: -25%;
+                max-height: 10rem;
+                position: absolute;
+                top: 1rem;
+                overflow: auto;
+        
+                li  {
+                    text-align: left;
+                    
+                    a {
+                        transition: all 100ms ease-in 25ms;
+
+                        &:link,
+                        &:visited {
+                            opacity: 1;
+                        }                        
+
+                        &:hover {
+                            text-shadow: 0 0 0.01rem Colors.$p-very-dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-item {
+            .nav-item-button {
+                background-color: transparent;
+                color: Colors.$n-white;
+                font-size: 1rem;
+                letter-spacing: 0.005125rem;
+                opacity: 0.7;
+
+                .arrow-light {
+                    display: block;
+                }
+
+                .arrow-dark {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header-cta {
+        border-top: none;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        .cta {
+
+            &:active {
+                transform: scale(0.975);
+            }
+
+            a {
+                font-size: 1rem;
+                padding: 0.9rem 2.3rem;
+            }
+        }
+
+        .cta-login {
+            background-color: transparent;
+
+            a {
+                color: Colors.$n-white;
+                padding: 0.75rem 1.95rem 0.5rem 2.15rem;
+                font-family: "Ubuntu", sans-serif;
+                opacity: 0.65;
+
+                &:hover {
+                    opacity: 1;
+                }   
+            }
+        }
+
+        .cta-sign-up {
+            background-color: Colors.$n-white;
+            background-image: none;
+
+            &:hover {
+                background-color: Colors.$p-very-light-red;
+                opacity: 1;
+
+                a {
+                    color: Colors.$n-white;
+                }
+            }
+
+            a {
+                color: Colors.$p-light-red;
+                margin-left: 0.25rem;
+            }
         }
     }
 }

@@ -64,6 +64,7 @@
 
             &:hover {
                 text-decoration: underline Colors.$n-white solid 0.15rem;
+                text-shadow: 0 0 0.1rem Colors.$n-white;
                 opacity: 1;
             }
         }
@@ -83,10 +84,10 @@
         margin: 1.25rem 0 0.5rem;
         padding: 1.7rem;
         row-gap: 1.1rem;
-        transition: display 1000ms ease-out 0s;
         
         a {
             color: Colors.$sub-nav-link;
+            display: inline-block;
             font-size: 1.05rem;
             font-weight: 600;
             letter-spacing: -0.03125rem;
@@ -125,7 +126,7 @@
 
     .cta-sign-up {
         background-image: linear-gradient(90deg, Colors.$g-very-light-red, Colors.$g-light-red);
-
+        
         a {
             color: Colors.$n-white;
             font-family: 'Ubuntu', sans-serif;
@@ -171,6 +172,19 @@
         
                 li  {
                     text-align: left;
+                    
+                    a {
+                        transition: all 100ms ease-in 25ms;
+
+                        &:link,
+                        &:visited {
+                            opacity: 1;
+                        }                        
+
+                        &:hover {
+                            text-shadow: 0 0 0.01rem Colors.$p-very-dark-blue;
+                        }
+                    }
                 }
             }
         }
@@ -201,6 +215,11 @@
         padding: 0;
 
         .cta {
+
+            &:active {
+                transform: scale(0.975);
+            }
+
             a {
                 font-size: 1rem;
                 padding: 0.9rem 2.3rem;
@@ -215,12 +234,25 @@
                 padding: 0.75rem 1.95rem 0.5rem 2.15rem;
                 font-family: "Ubuntu", sans-serif;
                 opacity: 0.65;
+
+                &:hover {
+                    opacity: 1;
+                }   
             }
         }
 
         .cta-sign-up {
             background-color: Colors.$n-white;
             background-image: none;
+
+            &:hover {
+                background-color: Colors.$p-very-light-red;
+                opacity: 1;
+
+                a {
+                    color: Colors.$n-white;
+                }
+            }
 
             a {
                 color: Colors.$p-light-red;

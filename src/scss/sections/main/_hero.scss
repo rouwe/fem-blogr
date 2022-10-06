@@ -84,10 +84,30 @@
 
             .cta a {
                 padding: 0.9rem 1.1rem 0.9rem;
+                transition: all 100ms ease-in 0s;
+
+                &:active {
+                    transform: scale(0.975);
+                }
+            }
+
+            .cta-start {
+                &:hover {    
+                    a {
+                        background-color: Colors.$p-very-light-red;
+                        border-color: Colors.$p-very-light-red;;
+                        color: Colors.$n-white;
+                    }
+                }
             }
 
             .cta-learn a {
                 padding: 0.8rem 1.5rem 0.9rem;
+
+                &:hover {
+                    background-color: Colors.$n-white;
+                    color: Colors.$p-very-light-red;
+                }
             }
         }
     }

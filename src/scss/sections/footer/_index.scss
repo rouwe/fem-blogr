@@ -69,7 +69,17 @@
                     }
     
                     .f-sub-nav-link {
-                        opacity: 0.8;
+                        transition: all 250ms ease-in 25ms;
+
+                        &:link,
+                        &:visited {
+                            opacity: 0.8;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                            opacity: 1;
+                        }
                     }
                 }
 
